@@ -8,7 +8,18 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController {
+    
+    CGPoint lastPoint;
+    CGPoint moveBackTo;
+    CGPoint currentPoint;
+    CGPoint location;
+    NSDate *lastClick;
+    BOOL mouseSwiped;
+    UIImageView *drawImage;
+    UIImageView *frontImage;
+    
+}
 
 
 @end
